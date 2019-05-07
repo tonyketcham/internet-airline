@@ -28,11 +28,6 @@ should launch.
 running, or the server will catastrophically fail and be rendered inoperable. I
 figured that out the hard way.
 
-For reference, a **successful launch of the website** will display this welcome
-page:
-
-![](media/84c0428eadda91b351da28def74387f8.png)
-
 **To Test Use of Cookies:**
 
 Sign in to an account, then close the website and USBWebserver. Re-open
