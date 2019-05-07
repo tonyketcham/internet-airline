@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(35deg, #1F261F, #768678);
+}
+
+/*--------------------
+Buttons
+--------------------*/
+.btn {
+  display: block;
+  background: #bded7d;
+  color: white !important;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 15px;
+  border-radius: 5px;
+  position: relative;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .2s ease-in-out;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.btn:hover::after {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------
+paymentForm
+--------------------*/
+.paymentform fieldset {
+  border: none;
+  padding: 0;
+  padding: 0;
+  position: relative;
+  clear: both;
+}
+.paymentform fieldset.fieldset-expiration {
+  float: left;
+  width: 60%;
+}
+.paymentform fieldset.fieldset-expiration .select {
+  width: 84px;
+  margin-right: 12px;
+  float: left;
+}
+.paymentform fieldset.fieldset-ccv {
+  clear: none;
+  float: right;
+  width: 86px;
+}
+.paymentform fieldset label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: Inconsolata;
+}
+.paymentform fieldset input,
+.paymentform fieldset .select {
+  width: 100%;
+  height: 38px;
+  color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.paymentform fieldset input.input-cart-number,
+.paymentform fieldset .select.input-cart-number {
+  width: 82px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.paymentform fieldset input.input-cart-number:last-child,
+.paymentform fieldset .select.input-cart-number:last-child {
+  margin-right: 0;
+}
+.paymentform fieldset .select {
+  position: relative;
+}
+.paymentform fieldset .select::after {
+  content: '';
+  border-top: 8px solid #222;
+  border-left: 4px solid trans
+  border-right: 4px solid trans
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  right: 10px;
+  pointer-events: none;
+}
+.paymentform fieldset .select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  padding: 0 !important;
+  border: none;
+  width: 100%;
+  outline: none !important;
+  top: -10px;
+  left: 20px;
+  background: none;
+  margin: none !important;
+}
+.paymentform fieldset .select select :-moz-focusring {
+  color: trans
+  text-shadow: 0 0 0 #000;
+}
+.paymentform button {
+  width: 100%;
+  outline: none !important;
+  background: linear-gradient(180deg, #49A04D, #3D9149);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+.paymentform button .fa {
+  margin-right: 6px;
+}
+
+/*--------------------
+Checkout
+--------------------*/
+.checkout {
+  margin: 150px auto 30px;
+  position: relative;
+  width: 460px;
+  background: white;
+  border-radius: 15px;
+  padding: 160px 45px 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#plane {
+  margin: auto;
+  
+  display:  -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items:  center;
+  margin-top: -115px;
+  padding-bottom: -50px;
+}
+
+#paymentdetails
+
